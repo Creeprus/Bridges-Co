@@ -1,4 +1,4 @@
-﻿using Curse_Them_All_Courier.Entity_Models;
+﻿
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 

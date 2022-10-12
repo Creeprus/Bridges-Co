@@ -1,0 +1,33 @@
+﻿@page "/login"
+@using Entity_Models
+
+<h3 class="centerAlign">Авторизироваться</h3>
+
+<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header centerAlign">
+				<h5 class="modal-title ">Введите логин и пароль</h5>
+				
+			</div>
+			<div class="modal-body">
+				<div class="mb-3">
+					<label for="login" class="form-label">Логин</label>
+					<input type="text" class="form-control" id="Login" placeholder="YourLogin" autocomplete="off" required @* @bind-value=""*@ />
+				</div>
+				<div class="mb-3">
+					<label for="loginPassword" class="form-label">Пароль</label>
+					<input type="password" class="form-control" id="Password" required />
+				</div>
+			</div>
+			<div class="centerAlign modal-body">
+				<center>
+				<button type="button" style="align-content:center" class="btn btn-outline-primary centerAlign" @*@onclick="Login"*@>Авторизироваться</button>
+				</center>
+			</div>
+		</div>
+</div>
+
+
+@code {
+
+}

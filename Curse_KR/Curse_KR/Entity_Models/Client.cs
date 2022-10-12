@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
-using Curse_Them_All_Courier.Entity_Models;
+
 
 namespace Curse_KR.Entity_Models
 {

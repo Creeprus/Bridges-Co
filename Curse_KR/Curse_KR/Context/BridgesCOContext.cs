@@ -1,5 +1,4 @@
 ﻿using Curse_KR.Entity_Models;
-using Curse_Them_All_Courier.Entity_Models;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Curse_Them_All_Courier.Entity_Models
+namespace Curse_KR.Entity_Models
 {
     public class Account
     {
