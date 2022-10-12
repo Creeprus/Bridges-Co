@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iEZ8/MyYV89E9ddJQaD7F6QYe/kdoNR3L8BO3/1mL0E=",
+  "Hash": "lr5pSlZP2WY34wmghUiOLuOYafPNwcsh8p1AmBMUXJ4=",
   "Source": "Curse_KR",
   "BasePath": "_content/Curse_KR",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Curse_KR\\wwwroot",
       "Source": "Curse_KR",
-      "ContentRoot": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\",
       "BasePath": "_content/Curse_KR",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Curse_KR.styles.css",
+      "Identity": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Curse_KR.styles.css",
       "SourceId": "Curse_KR",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Curse_KR",
       "RelativePath": "Curse_KR.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Curse_KR.styles.css"
+      "OriginalItemSpec": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Curse_KR.styles.css"
     },
     {
-      "Identity": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Curse_KR.bundle.scp.css",
+      "Identity": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Curse_KR.bundle.scp.css",
       "SourceId": "Curse_KR",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Curse_KR",
       "RelativePath": "Curse_KR.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Curse_KR.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Curse_KR.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "Curse_KR",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\",
       "BasePath": "_content/Curse_KR",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "Curse_KR",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\",
       "BasePath": "_content/Curse_KR",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "Curse_KR",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\",
       "BasePath": "_content/Curse_KR",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "Curse_KR",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\",
       "BasePath": "_content/Curse_KR",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "Curse_KR",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\",
       "BasePath": "_content/Curse_KR",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "Curse_KR",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\",
       "BasePath": "_content/Curse_KR",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "Curse_KR",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\",
       "BasePath": "_content/Curse_KR",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "Curse_KR",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\",
       "BasePath": "_content/Curse_KR",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "Curse_KR",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\",
       "BasePath": "_content/Curse_KR",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "Curse_KR",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\",
       "BasePath": "_content/Curse_KR",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "Curse_KR",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\",
       "BasePath": "_content/Curse_KR",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\css\\site.css",
       "SourceId": "Curse_KR",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\",
       "BasePath": "_content/Curse_KR",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\favicon.ico",
       "SourceId": "Curse_KR",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\",
       "BasePath": "_content/Curse_KR",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",

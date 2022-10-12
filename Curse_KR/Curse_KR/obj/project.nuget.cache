@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5fGdvrlxge6NjqQT8NiOtQ78AAz6lA+ZPoHJt6WC7hzywPnd+A3oNCQMOFkbHmif/yoHIxVgmaWb4mawY2x5NA==",
+  "dgSpecHash": "yc4Fyb+r0x/eb64isQ+Hh7AO2JaAVgk0mdCisclwbSvmnBJ7jgjpEx9Vk6CxcG3pjg5yhzBQL4vCBpQauzfZUQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\Curse_KR.csproj",
+  "projectFilePath": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\Curse_KR.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\levak\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\levak\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

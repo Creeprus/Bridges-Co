@@ -245,6 +245,35 @@ namespace Curse_KR.Migrations
                     { 5, "Клиент" },
                     { 6, "Администратор" }
                 });
+            migrationBuilder.InsertData(
+        table: "Account",
+        //Пароль проверяться будет на уровне приложения, так как он шифруется
+        columns: new[] { "Id_Account", "Login", "Password" },
+        values: new object[,]
+        {
+                    { 1, "PepegaLord", "5f013368646b4c48d66a7df4ee89d1cfcd8928b9aadf69dcbd05170604666289"},
+
+        });
+            migrationBuilder.InsertData(
+             table: "Employees",
+             columns: new[] { "Id_Employee", "Surname","Name","Patronymic", "Series_Passport", "Number_Passport", "Id_Role" },
+             values: new object[,]
+             {
+                    { 1, "Великов", "Василий", "Жмадонович", "7135","812731",2 },
+                    
+             });
+
+            var createProcSql = @"CREATE PROCEDURE AddShipment
+@Shipment_Name varchar(100),
+@Date_Arrive datetime2,
+@Expiration_Date datetime2,
+@Cost decimal(18,2)
+AS
+BEGIN
+
+INSERT INTO Shipment ([Shipment_Name],[Date_Arrive],[Expiration_Date],[Cost]) VALUES (@Shipment_Name,@Date_Arrive,@Expiration_Date,@Cost)
+END";
+            migrationBuilder.Sql(createProcSql);
 
             migrationBuilder.CreateIndex(
                 name: "IX_Employees_Id_Role",
@@ -318,6 +347,9 @@ namespace Curse_KR.Migrations
 
             migrationBuilder.DropTable(
                 name: "Suppliers");
+
+            var dropProcSql = "DROP PROC AddShipment";
+            migrationBuilder.Sql(dropProcSql);
         }
     }
 }

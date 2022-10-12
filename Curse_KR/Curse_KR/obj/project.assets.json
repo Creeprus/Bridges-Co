@@ -2019,11 +2019,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\Curse_KR.csproj",
+      "projectUniqueName": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\Curse_KR.csproj",
       "projectName": "Curse_KR",
-      "projectPath": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\Curse_KR.csproj",
+      "projectPath": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\Curse_KR.csproj",
       "packagesPath": "C:\\Users\\levak\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\levak\\source\\repos\\Curse_KR\\Curse_KR\\obj\\",
+      "outputPath": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
