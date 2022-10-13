@@ -255,7 +255,7 @@ values: new object[,]
                     { 1, "Великов", "Василий", "Жмадонович", "7135","812731",2 },
 
              });
-            var createProcSql = @"CREATE PROCEDURE AddShipment
+            var createProcSqlAddShipment = @"CREATE PROCEDURE AddShipment
 @Shipment_Name varchar(100),
 @Date_Arrive datetime2,
 @Expiration_Date datetime2,
@@ -265,7 +265,35 @@ BEGIN
 
 INSERT INTO Shipment ([Shipment_Name],[Date_Arrive],[Expiration_Date],[Cost]) VALUES (@Shipment_Name,@Date_Arrive,@Expiration_Date,@Cost)
 END";
-            migrationBuilder.Sql(createProcSql);
+            var createProcSqlDeleteShipment = @"
+CREATE PROCEDURE DeleteShipment
+@Id_Shipment integer
+AS
+BEGIN
+	DELETE FROM Shipment WHERE ([Id_Shipment]=@Id_Shipment)
+END"
+;
+            var createProcSqlUpdateShipment = @"CREATE PROCEDURE UpdateShipment
+@Id_Shipment integer,
+@Shipment_Name varchar(100),
+@Date_Arrive datetime2,
+@Expiration_Date datetime2,
+@Cost decimal(18,2)
+AS
+BEGIN
+
+UPDATE  
+Shipment 
+SET
+[Shipment_Name]=@Shipment_Name,
+[Date_Arrive]=@Date_Arrive,
+[Expiration_Date]=@Expiration_Date,
+[Cost]=@Cost
+WHERE ([Id_Shipment]=@Id_Shipment)
+END";
+            migrationBuilder.Sql(createProcSqlAddShipment);
+            migrationBuilder.Sql(createProcSqlDeleteShipment);
+            migrationBuilder.Sql(createProcSqlUpdateShipment);
             migrationBuilder.CreateIndex(
                 name: "IX_Employees_Id_Role",
                 table: "Employees",
@@ -338,8 +366,12 @@ END";
 
             migrationBuilder.DropTable(
                 name: "Suppliers");
-            var dropProcSql = "DROP PROC AddShipment";
-            migrationBuilder.Sql(dropProcSql);
+            var dropProcAddSql = "DROP PROC AddShipment";
+            migrationBuilder.Sql(dropProcAddSql);
+            var dropProcDelSql = "DROP PROC DeleteShipment";
+            migrationBuilder.Sql(dropProcDelSql);
+            var dropProcUpdSql = "DROP PROC UpdateShipment";
+            migrationBuilder.Sql(dropProcUpdSql);
         }
     }
 }

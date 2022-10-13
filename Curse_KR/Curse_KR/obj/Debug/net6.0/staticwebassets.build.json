@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iSL+xggErn/na9vHpLsTHAd7niuyri0GZj789RjnP9w=",
+  "Hash": "Ft4At4EdFnbwWRn80ZgATcAdm7ikyPIWXiEGekz+rpQ=",
   "Source": "Curse_KR",
   "BasePath": "_content/Curse_KR",
   "Mode": "Default",
@@ -61,6 +61,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Curse_KR.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\citynight.jpg",
+      "SourceId": "Curse_KR",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\",
+      "BasePath": "_content/Curse_KR",
+      "RelativePath": "citynight.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\citynight.jpg"
     },
     {
       "Identity": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
@@ -282,6 +299,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\Palms.jpg",
+      "SourceId": "Curse_KR",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\Curse_KR\\wwwroot\\",
+      "BasePath": "_content/Curse_KR",
+      "RelativePath": "Palms.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Palms.jpg"
     }
   ]
 }
