@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "lr5pSlZP2WY34wmghUiOLuOYafPNwcsh8p1AmBMUXJ4=",
+  "Hash": "iSL+xggErn/na9vHpLsTHAd7niuyri0GZj789RjnP9w=",
   "Source": "Curse_KR",
   "BasePath": "_content/Curse_KR",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\levak\\Documents\\GitHub\\Bridges-Co\\Curse_KR\\BridgeCoAPI\\BridgeCoAPI.csproj",
+      "Version": 2,
+      "Source": "BridgeCoAPI",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier"
+    }
+  ],
   "DiscoveryPatterns": [
     {
       "Name": "Curse_KR\\wwwroot",

@@ -1,0 +1,12 @@
+C:\Users\levak\Documents\GitHub\Bridges-Co\Curse_KR\BridgesCoModels\bin\Debug\net6.0\BridgesCoModels.deps.json
+C:\Users\levak\Documents\GitHub\Bridges-Co\Curse_KR\BridgesCoModels\bin\Debug\net6.0\BridgesCoModels.dll
+C:\Users\levak\Documents\GitHub\Bridges-Co\Curse_KR\BridgesCoModels\bin\Debug\net6.0\BridgesCoModels.pdb
+C:\Users\levak\Documents\GitHub\Bridges-Co\Curse_KR\BridgesCoModels\obj\Debug\net6.0\BridgesCoModels.csproj.AssemblyReference.cache
+C:\Users\levak\Documents\GitHub\Bridges-Co\Curse_KR\BridgesCoModels\obj\Debug\net6.0\BridgesCoModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\levak\Documents\GitHub\Bridges-Co\Curse_KR\BridgesCoModels\obj\Debug\net6.0\BridgesCoModels.AssemblyInfoInputs.cache
+C:\Users\levak\Documents\GitHub\Bridges-Co\Curse_KR\BridgesCoModels\obj\Debug\net6.0\BridgesCoModels.AssemblyInfo.cs
+C:\Users\levak\Documents\GitHub\Bridges-Co\Curse_KR\BridgesCoModels\obj\Debug\net6.0\BridgesCoModels.csproj.CoreCompileInputs.cache
+C:\Users\levak\Documents\GitHub\Bridges-Co\Curse_KR\BridgesCoModels\obj\Debug\net6.0\BridgesCoModels.dll
+C:\Users\levak\Documents\GitHub\Bridges-Co\Curse_KR\BridgesCoModels\obj\Debug\net6.0\refint\BridgesCoModels.dll
+C:\Users\levak\Documents\GitHub\Bridges-Co\Curse_KR\BridgesCoModels\obj\Debug\net6.0\BridgesCoModels.pdb
+C:\Users\levak\Documents\GitHub\Bridges-Co\Curse_KR\BridgesCoModels\obj\Debug\net6.0\ref\BridgesCoModels.dll

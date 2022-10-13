@@ -1,4 +1,4 @@
-using Curse_KR.Context;
+using BridgesCoModels.Context;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.EntityFrameworkCore;

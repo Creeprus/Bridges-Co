@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "F/AsECD4KWWBl/kvBKdqttDSzHjCoEp4ge3lf7Uxm54=",
+  "Source": "BridgeCoAPI",
+  "BasePath": "_content/BridgeCoAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
