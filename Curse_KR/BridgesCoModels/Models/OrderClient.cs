@@ -13,5 +13,6 @@ namespace BridgesCoModels.Models
         public Order Order_Id { get; set; }
         [ForeignKey("Id_Account")]
         public Account Account_Id{ get; set; }
+        public ICollection<OrderClient> OrderClientCollection { get; set; }
     }
 }

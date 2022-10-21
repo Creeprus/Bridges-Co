@@ -1,0 +1,26 @@
+﻿@page "/accounts"
+@using Curse_KR.Services
+
+@inject IAccountService AccountServices
+
+
+<h3>Accounts</h3>
+
+@foreach (var acc in AccountServices.Accounts)
+{
+    <tr>
+        <td>@acc.Login</td>
+        <td>@acc.Password</td>
+   
+    
+    </tr>
+}
+
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await AccountServices.GetAccount();
+    }
+
+}

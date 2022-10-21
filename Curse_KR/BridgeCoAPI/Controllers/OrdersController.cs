@@ -25,7 +25,7 @@ namespace BridgeCoAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Order>>> GetOrders()
         {
-            return await _context.Orders.ToListAsync();
+            return await _context.Orders.Include(x=>x.Account_Id).Include(x => x.Shipment_Id).ToListAsync();
         }
 
         // GET: api/Orders/5
@@ -38,7 +38,8 @@ namespace BridgeCoAPI.Controllers
             {
                 return NotFound();
             }
-
+            await _context.Entry(order).Reference(x => x.Account_Id).LoadAsync();
+            await _context.Entry(order).Reference(x => x.Shipment_Id).LoadAsync();
             return order;
         }
 

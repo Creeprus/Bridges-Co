@@ -84,21 +84,21 @@ namespace BridgeCoAPI.Controllers
             return CreatedAtAction("GetSupplier", new { id = supplier.Id_Supplier }, supplier);
         }
 
-        // DELETE: api/Suppliers/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteSupplier(int id)
-        {
-            var supplier = await _context.Suppliers.FindAsync(id);
-            if (supplier == null)
-            {
-                return NotFound();
-            }
+        //// DELETE: api/Suppliers/5
+        //[HttpDelete("{id}")]
+        //public async Task<IActionResult> DeleteSupplier(int id)
+        //{
+        //    var supplier = await _context.Suppliers.FindAsync(id);
+        //    if (supplier == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            _context.Suppliers.Remove(supplier);
-            await _context.SaveChangesAsync();
+        //    _context.Suppliers.Remove(supplier);
+        //    await _context.SaveChangesAsync();
 
-            return NoContent();
-        }
+        //    return NoContent();
+        //}
 
         private bool SupplierExists(int id)
         {

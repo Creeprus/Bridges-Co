@@ -14,5 +14,6 @@ namespace BridgesCoModels.Models
         public Shipment Shipment_Id { get; set; }
         [ForeignKey ("Id_Supply"), AllowNull]
         public Supply Supply_Id { get; set; }
+        public ICollection<Storage> StorageCollection { get; set; }
     }
 }

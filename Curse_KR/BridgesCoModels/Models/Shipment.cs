@@ -17,5 +17,6 @@ namespace BridgesCoModels.Models
         public DateTime? Expiration_Date { get; set; }
         [Required]
         public decimal Cost { get; set; }
+        public ICollection<Shipment> ShipmentCollection { get; set; }
     }
 }

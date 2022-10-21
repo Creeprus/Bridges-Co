@@ -14,3 +14,27 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\levak\Documents\GitHub\Bridges-Co\Curse_KR\BridgeCoAPI
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/levak/Documents/GitHub/Bridges-Co/Curse_KR/BridgeCoAPI/Views/Pathings/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aGluZ3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/levak/Documents/GitHub/Bridges-Co/Curse_KR/BridgeCoAPI/Views/Pathings/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aGluZ3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/levak/Documents/GitHub/Bridges-Co/Curse_KR/BridgeCoAPI/Views/Pathings/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aGluZ3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/levak/Documents/GitHub/Bridges-Co/Curse_KR/BridgeCoAPI/Views/Pathings/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aGluZ3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/levak/Documents/GitHub/Bridges-Co/Curse_KR/BridgeCoAPI/Views/Pathings/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aGluZ3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/levak/Documents/GitHub/Bridges-Co/Curse_KR/BridgeCoAPI/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

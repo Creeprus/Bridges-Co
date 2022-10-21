@@ -264,3 +264,5 @@ C:\Users\levak\Documents\GitHub\Bridges-Co\Curse_KR\BridgeCoAPI\bin\Debug\net6.0
 C:\Users\levak\Documents\GitHub\Bridges-Co\Curse_KR\BridgeCoAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\levak\Documents\GitHub\Bridges-Co\Curse_KR\BridgeCoAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\levak\Documents\GitHub\Bridges-Co\Curse_KR\BridgeCoAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\levak\Documents\GitHub\Bridges-Co\Curse_KR\BridgeCoAPI\obj\Debug\net6.0\BridgeCoAPI.RazorAssemblyInfo.cache
+C:\Users\levak\Documents\GitHub\Bridges-Co\Curse_KR\BridgeCoAPI\obj\Debug\net6.0\BridgeCoAPI.RazorAssemblyInfo.cs

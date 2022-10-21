@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\BridgeCoAPI",
+    "\\BridgeCoAPI\\Controllers",
+    "\\BridgesCoModels",
+    "\\BridgesCoModels\\Models",
+    "\\Curse_KR"
+  ],
+  "SelectedNode": "\\BridgeCoAPI\\Controllers\\ClientsController.cs",
+  "PreviewInSolutionExplorer": false
+}

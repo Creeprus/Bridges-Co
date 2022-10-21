@@ -30,6 +30,9 @@ namespace BridgeCoAPI.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_Account"), 1L, 1);
 
+                    b.Property<int?>("AccountId_Account")
+                        .HasColumnType("int");
+
                     b.Property<string>("Login")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -42,80 +45,20 @@ namespace BridgeCoAPI.Migrations
 
                     b.HasKey("Id_Account");
 
+                    b.HasIndex("AccountId_Account");
+
+                    b.HasIndex("Login")
+                        .IsUnique();
+
                     b.ToTable("Account");
-                });
 
-            modelBuilder.Entity("BridgesCoModels.Models.Client", b =>
-                {
-                    b.Property<int>("Id_Client")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasMaxLength(150)
-                        .HasColumnType("nvarchar(150)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("Patronymic")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("Phone_Number")
-                        .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
-
-                    b.Property<string>("Surname")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.HasKey("Id_Client");
-
-                    b.ToTable("Clients");
-                });
-
-            modelBuilder.Entity("BridgesCoModels.Models.Employee", b =>
-                {
-                    b.Property<int>("Id_Employee")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Id_Role")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("Number_Passport")
-                        .IsRequired()
-                        .HasMaxLength(6)
-                        .HasColumnType("nvarchar(6)");
-
-                    b.Property<string>("Patronymic")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("Series_Passport")
-                        .IsRequired()
-                        .HasMaxLength(4)
-                        .HasColumnType("nvarchar(4)");
-
-                    b.Property<string>("Surname")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.HasKey("Id_Employee");
-
-                    b.HasIndex("Id_Role");
-
-                    b.ToTable("Employees");
+                    b.HasData(
+                        new
+                        {
+                            Id_Account = 1,
+                            Login = "PepegaLord",
+                            Password = "5f013368646b4c48d66a7df4ee89d1cfcd8928b9aadf69dcbd05170604666289"
+                        });
                 });
 
             modelBuilder.Entity("BridgesCoModels.Models.Order", b =>
@@ -176,6 +119,31 @@ namespace BridgeCoAPI.Migrations
                     b.ToTable("OrderClient");
                 });
 
+            modelBuilder.Entity("BridgesCoModels.Models.Pathing", b =>
+                {
+                    b.Property<int>("Id_Pathing")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Adress")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("Path_time")
+                        .IsRequired()
+                        .HasMaxLength(5)
+                        .HasColumnType("nvarchar(5)");
+
+                    b.Property<string>("Transport")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id_Pathing");
+
+                    b.ToTable("Pathing");
+                });
+
             modelBuilder.Entity("BridgesCoModels.Models.Role", b =>
                 {
                     b.Property<int>("Id_Role")
@@ -197,17 +165,17 @@ namespace BridgeCoAPI.Migrations
                         new
                         {
                             Id_Role = 1,
-                            Role_Name = "Поставщик"
-                        },
-                        new
-                        {
-                            Id_Role = 2,
                             Role_Name = "Логист"
                         },
                         new
                         {
+                            Id_Role = 2,
+                            Role_Name = "Администратор"
+                        },
+                        new
+                        {
                             Id_Role = 3,
-                            Role_Name = "Курьер"
+                            Role_Name = "Поставщик"
                         },
                         new
                         {
@@ -217,12 +185,12 @@ namespace BridgeCoAPI.Migrations
                         new
                         {
                             Id_Role = 5,
-                            Role_Name = "Клиент"
+                            Role_Name = "Курьер"
                         },
                         new
                         {
                             Id_Role = 6,
-                            Role_Name = "Администратор"
+                            Role_Name = "Клиент"
                         });
                 });
 
@@ -323,34 +291,70 @@ namespace BridgeCoAPI.Migrations
                     b.ToTable("Supplies");
                 });
 
-            modelBuilder.Entity("BridgesCoModels.Models.Client", b =>
+            modelBuilder.Entity("BridgesCoModels.Models.User", b =>
                 {
-                    b.HasOne("BridgesCoModels.Models.Account", "Account_Id")
-                        .WithMany()
-                        .HasForeignKey("Id_Client")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Property<int>("Id_User")
+                        .HasColumnType("int");
 
-                    b.Navigation("Account_Id");
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.Property<int>("Id_Role")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Number_Passport")
+                        .HasMaxLength(6)
+                        .HasColumnType("nvarchar(6)");
+
+                    b.Property<string>("Patronymic")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Phone_Number")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
+                    b.Property<string>("Series_Passport")
+                        .HasMaxLength(4)
+                        .HasColumnType("nvarchar(4)");
+
+                    b.Property<string>("Surname")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<int?>("UserId_User")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id_User");
+
+                    b.HasIndex("Id_Role");
+
+                    b.HasIndex("Phone_Number")
+                        .IsUnique();
+
+                    b.HasIndex("UserId_User");
+
+                    b.ToTable("Users");
+
+                    b.HasCheckConstraint("CheckEmail", "Email like '%@%.%'");
+
+                    b.HasCheckConstraint("CheckPhoneNumber", "Phone_Number like '+[7-8]([0-9][0-9][0-9])[0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'");
                 });
 
-            modelBuilder.Entity("BridgesCoModels.Models.Employee", b =>
+            modelBuilder.Entity("BridgesCoModels.Models.Account", b =>
                 {
-                    b.HasOne("BridgesCoModels.Models.Account", "Account_Id")
-                        .WithMany()
-                        .HasForeignKey("Id_Employee")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("BridgesCoModels.Models.Role", "Role_Id")
-                        .WithMany()
-                        .HasForeignKey("Id_Role")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Account_Id");
-
-                    b.Navigation("Role_Id");
+                    b.HasOne("BridgesCoModels.Models.Account", null)
+                        .WithMany("AccountCollection")
+                        .HasForeignKey("AccountId_Account");
                 });
 
             modelBuilder.Entity("BridgesCoModels.Models.Order", b =>
@@ -391,6 +395,17 @@ namespace BridgeCoAPI.Migrations
                     b.Navigation("Order_Id");
                 });
 
+            modelBuilder.Entity("BridgesCoModels.Models.Pathing", b =>
+                {
+                    b.HasOne("BridgesCoModels.Models.Order", "Order_Id")
+                        .WithMany()
+                        .HasForeignKey("Id_Pathing")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order_Id");
+                });
+
             modelBuilder.Entity("BridgesCoModels.Models.Storage", b =>
                 {
                     b.HasOne("BridgesCoModels.Models.Shipment", "Shipment_Id")
@@ -419,6 +434,39 @@ namespace BridgeCoAPI.Migrations
                         .IsRequired();
 
                     b.Navigation("Supplier_Id");
+                });
+
+            modelBuilder.Entity("BridgesCoModels.Models.User", b =>
+                {
+                    b.HasOne("BridgesCoModels.Models.Role", "Role_Id")
+                        .WithMany()
+                        .HasForeignKey("Id_Role")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BridgesCoModels.Models.Account", "Account_Id")
+                        .WithOne()
+                        .HasForeignKey("BridgesCoModels.Models.User", "Id_User")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BridgesCoModels.Models.User", null)
+                        .WithMany("UserCollection")
+                        .HasForeignKey("UserId_User");
+
+                    b.Navigation("Account_Id");
+
+                    b.Navigation("Role_Id");
+                });
+
+            modelBuilder.Entity("BridgesCoModels.Models.Account", b =>
+                {
+                    b.Navigation("AccountCollection");
+                });
+
+            modelBuilder.Entity("BridgesCoModels.Models.User", b =>
+                {
+                    b.Navigation("UserCollection");
                 });
 #pragma warning restore 612, 618
         }

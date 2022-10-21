@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace BridgesCoModels.Models
 {
@@ -9,6 +10,20 @@ namespace BridgesCoModels.Models
         [Required]
         [StringLength(30)]
         public string Role_Name { get; set; }
-        
+        public enum Role_Names
+        {
+            [Description]
+            Поставщик,
+            [Description]
+            Логист,
+            [Description]
+            Курьер,
+            [Description]
+            Кладовщик,
+            [Description]
+            Клиент,
+            [Description]
+            Администратор
+        }
     }
 }

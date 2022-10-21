@@ -12,7 +12,7 @@ namespace BridgesCoModels.Models
         [Required]
         [StringLength(100)]
         public string Supplier_Name { get;set; }
-       
 
+        public ICollection<Supplier> SupplierCollection { get; set; }
     }
 }

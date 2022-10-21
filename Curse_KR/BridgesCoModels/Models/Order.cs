@@ -20,5 +20,6 @@ namespace BridgesCoModels.Models
         public Account Account_Id { get; set; }
         [ForeignKey("Id_Shipment")]
         public Shipment Shipment_Id { get; set; }
+        public ICollection<Order> OrderCollection { get; set; }
     }
 }

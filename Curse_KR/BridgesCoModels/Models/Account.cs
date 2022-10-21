@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.ObjectModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace BridgesCoModels.Models
 {
@@ -12,5 +13,8 @@ namespace BridgesCoModels.Models
         [Required]
         [StringLength(256)]
         public string Password { get; set; }
+
+
+        public ICollection<Account> AccountCollection{get;set;}
     }
 }

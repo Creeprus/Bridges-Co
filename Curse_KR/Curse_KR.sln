@@ -5,9 +5,9 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Curse_KR", "Curse_KR\Curse_KR.csproj", "{0F1E846F-C5E2-43F9-A062-9F3A75BE212B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgeCoAPI", "BridgeCoAPI\BridgeCoAPI.csproj", "{6E24A5F6-2CB7-42EE-80BD-F0ACF21035AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BridgeCoAPI", "BridgeCoAPI\BridgeCoAPI.csproj", "{6E24A5F6-2CB7-42EE-80BD-F0ACF21035AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgesCoModels", "BridgesCoModels\BridgesCoModels.csproj", "{E61DFAC6-3FCF-4FF2-B679-2B7BAB9D6749}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BridgesCoModels", "BridgesCoModels\BridgesCoModels.csproj", "{E61DFAC6-3FCF-4FF2-B679-2B7BAB9D6749}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

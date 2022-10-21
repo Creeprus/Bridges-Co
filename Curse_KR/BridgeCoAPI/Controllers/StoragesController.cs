@@ -25,7 +25,7 @@ namespace BridgeCoAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Storage>>> GetStorage()
         {
-            return await _context.Storage.ToListAsync();
+            return await _context.Storage.Include(x=>x.Supply_Id).Include(x=>x.Shipment_Id).ToListAsync();
         }
 
         // GET: api/Storages/5
@@ -38,7 +38,8 @@ namespace BridgeCoAPI.Controllers
             {
                 return NotFound();
             }
-
+            await _context.Entry(storage).Reference(x => x.Supply_Id).LoadAsync();
+            await _context.Entry(storage).Reference(x => x.Shipment_Id).LoadAsync();
             return storage;
         }
 

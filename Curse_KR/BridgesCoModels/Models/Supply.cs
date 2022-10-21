@@ -12,7 +12,7 @@ namespace BridgesCoModels.Models
         public DateTime Date_of_supply { get; set; }
         [ForeignKey("Id_Supplier")]
         public Supplier Supplier_Id { get; set; }
-     
-        
+
+        public ICollection<Supply> SupplyCollection { get; set; }
     }
 }

@@ -1,10 +1,12 @@
 using BridgesCoModels.Context;
+using Curse_KR.Services;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.Extensions.Options;
-
+using Microsoft.AspNetCore.Components.Web;
+using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
