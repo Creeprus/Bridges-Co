@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace BridgesCoModels.Models
@@ -24,7 +25,7 @@ namespace BridgesCoModels.Models
         public string Transport { get; set; }
         [Required]
         public Order Order_Id { get; set; }
-
+        [JsonIgnore]
         public ICollection<Pathing> PathingCollection { get; set; }
     }
 }

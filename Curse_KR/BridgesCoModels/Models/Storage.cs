@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics.CodeAnalysis;
+using System.Text.Json.Serialization;
 
 namespace BridgesCoModels.Models
 {
@@ -14,6 +15,7 @@ namespace BridgesCoModels.Models
         public Shipment Shipment_Id { get; set; }
         [ForeignKey ("Id_Supply"), AllowNull]
         public Supply Supply_Id { get; set; }
+        [JsonIgnore]
         public ICollection<Storage> StorageCollection { get; set; }
     }
 }

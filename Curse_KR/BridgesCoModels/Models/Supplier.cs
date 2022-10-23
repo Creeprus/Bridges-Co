@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace BridgesCoModels.Models
 {
@@ -12,7 +13,7 @@ namespace BridgesCoModels.Models
         [Required]
         [StringLength(100)]
         public string Supplier_Name { get;set; }
-
+        [JsonIgnore]
         public ICollection<Supplier> SupplierCollection { get; set; }
     }
 }

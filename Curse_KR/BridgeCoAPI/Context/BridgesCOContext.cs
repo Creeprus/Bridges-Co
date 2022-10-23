@@ -1,35 +1,37 @@
 ﻿
 using BridgesCoModels.Models;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
 
 namespace BridgesCoModels.Context
 {
-    public class BridgesCOContext :DbContext
+    public class BridgesCOContext : DbContext
     {
         public BridgesCOContext(Microsoft.EntityFrameworkCore.DbContextOptions<BridgesCOContext> options) : base(options)
         {
-            
+
         }
-        
+
         public DbSet<Role> Roles { get; set; }
         public DbSet<User> Users { get; set; }
-      
+        public DbSet<StorageHistory> StorageHistories { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Shipment> Shipments { get; set; }
         public DbSet<Storage> Storage { get; set; }
-        public DbSet<Supplier> Suppliers { get; set; }  
+        public DbSet<Supplier> Suppliers { get; set; }
         public DbSet<Supply> Supplies { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-         
+
 
 
             modelBuilder.Entity<User>().HasOne(x => x.Account_Id).WithOne().OnDelete(DeleteBehavior.Cascade);
-            modelBuilder.Entity<Role>().HasData(new Role {
-                Id_Role=1, Role_Name="Логист"}
-                ) ;
+            modelBuilder.Entity<Role>().HasData(new Role
+            {
+                Id_Role = 1,
+                Role_Name = "Логист"
+            }
+                );
             modelBuilder.Entity<Role>().HasData(new Role
             {
                 Id_Role = 2,
@@ -81,11 +83,11 @@ namespace BridgesCoModels.Context
             //    Phone_Number= "+7(941)919-32-41"
             //});
 
-            modelBuilder.Entity<User>().HasCheckConstraint("CheckPhoneNumber","Phone_Number like '+[7-8]([0-9][0-9][0-9])[0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'");
-            modelBuilder.Entity<User>().HasIndex(x=>x.Phone_Number).IsUnique();
+            modelBuilder.Entity<User>().HasCheckConstraint("CheckPhoneNumber", "Phone_Number like '+[7-8]([0-9][0-9][0-9])[0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'");
+            modelBuilder.Entity<User>().HasIndex(x => x.Phone_Number).IsUnique();
             modelBuilder.Entity<Account>().HasIndex(x => x.Login).IsUnique();
             modelBuilder.Entity<User>().HasCheckConstraint("CheckEmail", "Email like '%@%.%'");
-            
+
 
 
         }
@@ -94,7 +96,7 @@ namespace BridgesCoModels.Context
         public DbSet<BridgesCoModels.Models.Pathing> Pathing { get; set; }
 
 
-     
+
     }
-    
+
 }

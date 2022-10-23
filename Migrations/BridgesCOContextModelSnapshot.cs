@@ -51,6 +51,14 @@ namespace BridgeCoAPI.Migrations
                         .IsUnique();
 
                     b.ToTable("Account");
+
+                    b.HasData(
+                        new
+                        {
+                            Id_Account = 1,
+                            Login = "PepegaLord",
+                            Password = "5f013368646b4c48d66a7df4ee89d1cfcd8928b9aadf69dcbd05170604666289"
+                        });
                 });
 
             modelBuilder.Entity("BridgesCoModels.Models.Order", b =>
@@ -144,9 +152,46 @@ namespace BridgeCoAPI.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_Role"), 1L, 1);
 
+                    b.Property<string>("Role_Name")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
                     b.HasKey("Id_Role");
 
                     b.ToTable("Roles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id_Role = 1,
+                            Role_Name = "Логист"
+                        },
+                        new
+                        {
+                            Id_Role = 2,
+                            Role_Name = "Администратор"
+                        },
+                        new
+                        {
+                            Id_Role = 3,
+                            Role_Name = "Поставщик"
+                        },
+                        new
+                        {
+                            Id_Role = 4,
+                            Role_Name = "Кладовщик"
+                        },
+                        new
+                        {
+                            Id_Role = 5,
+                            Role_Name = "Курьер"
+                        },
+                        new
+                        {
+                            Id_Role = 6,
+                            Role_Name = "Клиент"
+                        });
                 });
 
             modelBuilder.Entity("BridgesCoModels.Models.Shipment", b =>
